@@ -1,0 +1,39 @@
+:root {
+  --orange: #FFAB22;
+  --dark: #202124;
+  --light: #35363A;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr) 0.5fr;
+}
+
+.slider {
+  background-color: var(--orange);
+  grid-area: 1 / 1 / 6 / 2;
+}
+
+.header {
+  background-color: var(--dark);
+  grid-area: 1 / 2 / 2 / 6;
+}
+
+.main {
+  background-color: var(--light);
+  grid-area: 2 / 2 / 5 / 6;
+}
+
+.footer {
+  background-color: var(--dark);
+  grid-area: 5 / 2 / 6 / 6;
+}
