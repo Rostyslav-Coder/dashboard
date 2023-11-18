@@ -34,6 +34,9 @@
   gap: 4%;
 }
 
+.logo {
+  cursor: pointer;
+}
 
 .material-symbols-outlined {
   vertical-align: -2px;
