@@ -1,9 +1,9 @@
 :root {
-  --main: #FFAB22;
+  --main: #FF8C00;
   --dark-bg: #202124;
   --light-bg: #35363A;
-  --dark-font: #aaa;
-  --light-font: #ddd;
+  --dark-font: #ccc;
+  --light-font: #fff;
 
   font-size: 10px;
 }
@@ -79,6 +79,13 @@
   border: 2px solid var(--dark-font);
   border-radius: 25px;
   padding-left: 40px;
+  outline: none;
+}
+
+.header > .search > form > input:focus {
+  border: 2px solid var(--main);
+  background-color: var(--light-bg);
+  color: var(--light-font);
 }
 
 .header > .search > form > label {
@@ -88,7 +95,7 @@
   top: 8px
 }
 
-.header > .ico > img{
+.header > .ico > img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -105,8 +112,56 @@
 .nav {
   background-color: var(--dark-bg);
   grid-area: 2 / 2 / 3 / 6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 15px 5px 40px;
 }
 
+.nav > .icon {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav > .icon > img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+
+.nav > .icon > p {
+  font-size: 1.8rem;
+  color: var(--dark-font);
+  letter-spacing: 1px;
+  text-wrap: nowrap;
+}
+
+.nav > .icon > p::first-line {
+  font-size: 1.2rem;
+}
+
+.nav > .buttons {
+  display: flex;
+  gap: 25px;
+}
+
+.nav > .buttons button {
+  width: 14rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+  background-color: var(--main);
+  color: var(--dark-font);
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.nav > .buttons button:hover {
+  color: var(--light-font);
+}
+
+/* Main Style */
 .main {
   background-color: var(--light-bg);
   grid-area: 3 / 2 / 6 / 6;
