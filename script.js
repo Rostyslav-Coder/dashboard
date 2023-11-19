@@ -10,10 +10,12 @@ const settings = document.querySelector('#settings');
 const support = document.querySelector('#support');
 const privacy = document.querySelector('#privacy')
 
+wrapper.style.gridTemplateColumns = 'repeat(5, 1fr)';
 
 dashboardLogo.addEventListener('click', function() {
     if ( wrapper.style.gridTemplateColumns === 'repeat(5, 1fr)' ) {
         wrapper.style.gridTemplateColumns = '58px repeat(4, 1fr)';
+        dashboardLogo.style.marginLeft = '-7px';
         dashboardLogo.innerHTML = '<span class="material-symbols-outlined">dashboard</span>';
         home.innerHTML = '<span class="material-symbols-outlined">home</span>';
         profile.innerHTML = '<span class="material-symbols-outlined">contact_emergency</span>';
@@ -26,6 +28,7 @@ dashboardLogo.addEventListener('click', function() {
         privacy.innerHTML = '<span class="material-symbols-outlined">verified_user</span>';
     } else {
         wrapper.style.gridTemplateColumns = 'repeat(5, 1fr)';
+        dashboardLogo.style.marginLeft = '';
         dashboardLogo.innerHTML = '<span class="material-symbols-outlined">dashboard</span> Dashboard';
         home.innerHTML = '<span class="material-symbols-outlined">home</span> Home';
         profile.innerHTML = '<span class="material-symbols-outlined">contact_emergency</span> Profile';
