@@ -1,28 +1,32 @@
-const wrapper = document.querySelector('#wrapper');
-const dashboardLogo = document.querySelector('#logo');
-const home = document.querySelector('#home');
-const profile = document.querySelector('#profile');
-const messages = document.querySelector('#messages');
-const history_ = document.querySelector('#history');
-const tasks = document.querySelector('#tasks');
-const communities = document.querySelector('#communities');
-const settings = document.querySelector('#settings');
-const support = document.querySelector('#support');
-const privacy = document.querySelector('#privacy')
+// Dashboard
+
+// Declare and initialize sliders variables
+let wrapper = document.querySelector('#wrapper');
+let dashboardLogo = document.querySelector('#logo');
+let home = document.querySelector('#home');
+let projects = document.querySelector('#projects');
+let cV = document.querySelector('#cv');
+let certificates = document.querySelector('#certificates');
+let contacts = document.querySelector('#contacts');
+
+let settings = document.querySelector('#settings');
+let support = document.querySelector('#support');
+let privacy = document.querySelector('#privacy')
 
 wrapper.style.gridTemplateColumns = 'repeat(5, 1fr)';
 
+// Sliders folding
 dashboardLogo.addEventListener('click', function() {
     if ( wrapper.style.gridTemplateColumns === 'repeat(5, 1fr)' ) {
         wrapper.style.gridTemplateColumns = '58px repeat(4, 1fr)';
         dashboardLogo.style.marginLeft = '-7px';
         dashboardLogo.innerHTML = '<span class="material-symbols-outlined">dashboard</span>';
         home.innerHTML = '<span class="material-symbols-outlined">home</span>';
-        profile.innerHTML = '<span class="material-symbols-outlined">contact_emergency</span>';
-        messages.innerHTML = '<span class="material-symbols-outlined">chat_bubble</span>';
-        history_.innerHTML = '<span class="material-symbols-outlined">schedule</span>';
-        tasks.innerHTML = '<span class="material-symbols-outlined">filter_none</span>';
-        communities.innerHTML = '<span class="material-symbols-outlined">groups</span>';
+        projects.innerHTML = '<span class="material-symbols-outlined">terminal</span>';
+        cV.innerHTML = '<span class="material-symbols-outlined">developer_guide</span>';
+        certificates.innerHTML = '<span class="material-symbols-outlined">license</span>';
+        contacts.innerHTML = '<span class="material-symbols-outlined">contact_mail</span>';
+
         settings.innerHTML = '<span class="material-symbols-outlined">settings</span>';
         support.innerHTML = '<span class="material-symbols-outlined">live_help</span>';
         privacy.innerHTML = '<span class="material-symbols-outlined">verified_user</span>';
@@ -31,11 +35,11 @@ dashboardLogo.addEventListener('click', function() {
         dashboardLogo.style.marginLeft = '';
         dashboardLogo.innerHTML = '<span class="material-symbols-outlined">dashboard</span> Dashboard';
         home.innerHTML = '<span class="material-symbols-outlined">home</span> Home';
-        profile.innerHTML = '<span class="material-symbols-outlined">contact_emergency</span> Profile';
-        messages.innerHTML = '<span class="material-symbols-outlined">chat_bubble</span> Messages';
-        history_.innerHTML = '<span class="material-symbols-outlined">schedule</span> History';
-        tasks.innerHTML = '<span class="material-symbols-outlined">filter_none</span> Tasks';
-        communities.innerHTML = '<span class="material-symbols-outlined">groups</span> Communities';
+        projects.innerHTML = '<span class="material-symbols-outlined">terminal</span> Projects';
+        cV.innerHTML = '<span class="material-symbols-outlined">developer_guide</span> My CV';
+        certificates.innerHTML = '<span class="material-symbols-outlined">license</span> Certificates';
+        contacts.innerHTML = '<span class="material-symbols-outlined">contact_mail</span> Contacts';
+
         settings.innerHTML = '<span class="material-symbols-outlined">settings</span> Settings';
         support.innerHTML = '<span class="material-symbols-outlined">live_help</span> Support';
         privacy.innerHTML = '<span class="material-symbols-outlined">verified_user</span> Privacy';
