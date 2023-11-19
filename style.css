@@ -39,7 +39,7 @@
   vertical-align: -9px;
 }
 
-.slider > div >div:hover {
+.slider > div > div:hover {
   cursor: pointer;
   color: var(--light-font);
 }
