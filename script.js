@@ -21,9 +21,9 @@ dashboardLogo.addEventListener('click', function() {
         wrapper.style.gridTemplateColumns = '58px repeat(4, 1fr)';
         dashboardLogo.style.marginLeft = '-7px';
         dashboardLogo.innerHTML = '<span class="material-symbols-outlined">dashboard</span>';
-        home.innerHTML = '<span class="material-symbols-outlined">home</span>';
-        projects.innerHTML = '<span class="material-symbols-outlined">terminal</span>';
-        cV.innerHTML = '<span class="material-symbols-outlined">developer_guide</span>';
+        home.innerHTML = '<a href="#search_"><span class="material-symbols-outlined">home</span></a>';
+        projects.innerHTML = '<a href="#project"><span class="material-symbols-outlined">terminal</span></a>';
+        cV.innerHTML = '<a href="#my-cv"><span class="material-symbols-outlined">developer_guide</span></a>';
         certificates.innerHTML = '<span class="material-symbols-outlined">license</span>';
         contacts.innerHTML = '<span class="material-symbols-outlined">contact_mail</span>';
 
@@ -34,9 +34,9 @@ dashboardLogo.addEventListener('click', function() {
         wrapper.style.gridTemplateColumns = 'repeat(5, 1fr)';
         dashboardLogo.style.marginLeft = '';
         dashboardLogo.innerHTML = '<span class="material-symbols-outlined">dashboard</span> Dashboard';
-        home.innerHTML = '<span class="material-symbols-outlined">home</span> Home';
-        projects.innerHTML = '<span class="material-symbols-outlined">terminal</span> Projects';
-        cV.innerHTML = '<span class="material-symbols-outlined">developer_guide</span> My CV';
+        home.innerHTML = '<a href="#search_"><span class="material-symbols-outlined">home</span> Home</a>';
+        projects.innerHTML = '<a href="#project"><span class="material-symbols-outlined">terminal</span> Projects</a>';
+        cV.innerHTML = '<a href="#my-cv"><span class="material-symbols-outlined">developer_guide</span> My CV</a>';
         certificates.innerHTML = '<span class="material-symbols-outlined">license</span> Certificates';
         contacts.innerHTML = '<span class="material-symbols-outlined">contact_mail</span> Contacts';
 
