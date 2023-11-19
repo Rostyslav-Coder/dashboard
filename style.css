@@ -34,8 +34,14 @@
   gap: 4%;
 }
 
-.logo {
+.logo > span {
+  font-size: 3.8rem;
+  vertical-align: -9px;
+}
+
+.slider > div >div:hover {
   cursor: pointer;
+  color: var(--light-font);
 }
 
 .material-symbols-outlined {
