@@ -1,5 +1,5 @@
 :root {
-  --orange: #FFAB22;
+  --main: #FFAB22;
   --dark-bg: #202124;
   --light-bg: #35363A;
   --dark-font: #aaa;
@@ -20,13 +20,13 @@
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(4, 1fr) 0.5fr;
+  grid-template-rows: repeat(2, 1fr) repeat(3, 2fr) 0.5fr;
 }
 
 /* Slider Styles */
 .slider {
-  background-color: var(--orange);
-  grid-area: 1 / 1 / 6 / 2;
+  background-color: var(--main);
+  grid-area: 1 / 1 / 7 / 2;
   padding: 18px;
   font-size: 3rem;
   display: flex;
@@ -57,17 +57,64 @@
 /* Header Styles */
 .header {
   background-color: var(--dark-bg);
+  padding: 5px 15px;
   grid-area: 1 / 2 / 2 / 6;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 25px;
+}
+
+.header > .search {
+  margin-left: 25px;
+  margin-right: auto;
+  position: relative;
+}
+
+.header > .search > form > input {
+  width: 50vw;
+  height: 40px;
+  background-color: var(--dark-bg);
+  color: var(--dark-font);
+  border: 2px solid var(--dark-font);
+  border-radius: 25px;
+  padding-left: 40px;
+}
+
+.header > .search > form > label {
+  color: var(--dark-font);
+  position: absolute;
+  left: 12px;
+  top: 8px
+}
+
+.header > .ico > img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.header > .name {
+  font-size: 1.8rem;
+  color: var(--light-font);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Navigator Style */
+.nav {
+  background-color: var(--dark-bg);
+  grid-area: 2 / 2 / 3 / 6;
 }
 
 .main {
   background-color: var(--light-bg);
-  grid-area: 2 / 2 / 5 / 6;
+  grid-area: 3 / 2 / 6 / 6;
 }
 
 .footer {
   background-color: var(--dark-bg);
-  grid-area: 5 / 2 / 6 / 6;
+  grid-area: 6 / 2 / 7 / 6;
 }
 
 
