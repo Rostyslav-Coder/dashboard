@@ -1,47 +1,59 @@
 // Dashboard
 
 // Declare and initialize sliders variables
-let wrapper = document.querySelector('#wrapper');
-let dashboardLogo = document.querySelector('#logo');
+let mainGridContainer = document.querySelector('#main-grid-container');
+let dashboardLogo = document.querySelector('#dashboard');
 let home = document.querySelector('#home');
 let projects = document.querySelector('#projects');
 let cV = document.querySelector('#cv');
 let certificates = document.querySelector('#certificates');
 let contacts = document.querySelector('#contacts');
 
-let settings = document.querySelector('#settings');
-let support = document.querySelector('#support');
-let privacy = document.querySelector('#privacy')
-
-wrapper.style.gridTemplateColumns = 'repeat(5, 1fr)';
+mainGridContainer.style.gridTemplateColumns = 'repeat(5, 1fr)';
 
 // Sliders folding
 dashboardLogo.addEventListener('click', function() {
-    if ( wrapper.style.gridTemplateColumns === 'repeat(5, 1fr)' ) {
-        wrapper.style.gridTemplateColumns = '58px repeat(4, 1fr)';
+    if ( mainGridContainer.style.gridTemplateColumns === 'repeat(5, 1fr)' ) {
+        mainGridContainer.style.gridTemplateColumns = '58px repeat(4, 1fr)';
         dashboardLogo.style.marginLeft = '-7px';
-        dashboardLogo.innerHTML = '<span class="material-symbols-outlined">dashboard</span>';
-        home.innerHTML = '<a href="#search_"><span class="material-symbols-outlined">home</span></a>';
-        projects.innerHTML = '<a href="#project"><span class="material-symbols-outlined">terminal</span></a>';
-        cV.innerHTML = '<a href="#my-cv"><span class="material-symbols-outlined">developer_guide</span></a>';
-        certificates.innerHTML = '<span class="material-symbols-outlined">license</span>';
-        contacts.innerHTML = '<span class="material-symbols-outlined">contact_mail</span>';
-
-        settings.innerHTML = '<span class="material-symbols-outlined">settings</span>';
-        support.innerHTML = '<span class="material-symbols-outlined">live_help</span>';
-        privacy.innerHTML = '<span class="material-symbols-outlined">verified_user</span>';
+        dashboardLogo.innerHTML = (
+            '<span class="material-symbols-outlined">dashboard</span>'
+            );
+        home.innerHTML = (
+            '<a href="#top-link"><span class="material-symbols-outlined">home</span></a>'
+            );
+        projects.innerHTML = (
+            '<a href="#project-link"><span class="material-symbols-outlined">terminal</span></a>'
+            );
+        cV.innerHTML = (
+            '<a href="#curriculum-vitae-link"><span class="material-symbols-outlined">developer_guide</span></a>'
+            );
+        certificates.innerHTML = (
+            '<a href="#certificates-link"><span class="material-symbols-outlined">license</span></a>'
+            );
+        contacts.innerHTML = (
+            '<span class="material-symbols-outlined">contact_mail</span>'
+            );
     } else {
-        wrapper.style.gridTemplateColumns = 'repeat(5, 1fr)';
+        mainGridContainer.style.gridTemplateColumns = 'repeat(5, 1fr)';
         dashboardLogo.style.marginLeft = '';
-        dashboardLogo.innerHTML = '<span class="material-symbols-outlined">dashboard</span> Dashboard';
-        home.innerHTML = '<a href="#search_"><span class="material-symbols-outlined">home</span> Home</a>';
-        projects.innerHTML = '<a href="#project"><span class="material-symbols-outlined">terminal</span> Projects</a>';
-        cV.innerHTML = '<a href="#my-cv"><span class="material-symbols-outlined">developer_guide</span> My CV</a>';
-        certificates.innerHTML = '<span class="material-symbols-outlined">license</span> Certificates';
-        contacts.innerHTML = '<span class="material-symbols-outlined">contact_mail</span> Contacts';
-
-        settings.innerHTML = '<span class="material-symbols-outlined">settings</span> Settings';
-        support.innerHTML = '<span class="material-symbols-outlined">live_help</span> Support';
-        privacy.innerHTML = '<span class="material-symbols-outlined">verified_user</span> Privacy';
+        dashboardLogo.innerHTML = (
+            '<span class="material-symbols-outlined">dashboard</span> Dashboard'
+            );
+        home.innerHTML = (
+            '<a href="#top-link"><span class="material-symbols-outlined">home</span> Home</a>'
+            );
+        projects.innerHTML = (
+            '<a href="#project-link"><span class="material-symbols-outlined">terminal</span> Projects</a>'
+            );
+        cV.innerHTML = (
+            '<a href="#curriculum-vitae-link"><span class="material-symbols-outlined">developer_guide</span> My CV</a>'
+            );
+        certificates.innerHTML = (
+            '<a href="#certificates-link"><span class="material-symbols-outlined">license</span> Certificates</a>'
+            );
+        contacts.innerHTML = (
+            '<span class="material-symbols-outlined">contact_mail</span> Contacts'
+            );
     }
 });
