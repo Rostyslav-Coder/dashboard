@@ -7,54 +7,116 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Dashboard</title>
 </head>
+
 <body>
-    <div class="wrapper" id="wrapper">
+    <!-- Start of Main Page Container -->
+    <div class="main-grid-container" id="main-grid-container">
+
+        <!-- Start of Slider Container -->
         <div class="slider" id="slider">
-            <div class="dashboard">
-                <div class="logo" id="logo"><span class="material-symbols-outlined">dashboard</span> Dashboard</div>
+
+            <!-- Start of First Slider Logo -->
+            <div class="dashboard-top" id="dashboard-top">
+                <div class="dashboard" id="dashboard">
+                    <span class="material-symbols-outlined">dashboard</span> Dashboard
+                </div>
             </div>
+            <!-- End of First Slider Logo -->
+
+            <!-- Start of Slider Logo Group -->
             <div class="links">
-                <div class="link" id="home"><a href="#search_"><span class="material-symbols-outlined">home</span> Home</a></div>
-                <div class="link" id="projects"><a href="#project"><span class="material-symbols-outlined">terminal</span> Projects</a></div>
-                <div class="link" id="cv"><a href="#curriculum-vitae"><span class="material-symbols-outlined">developer_guide</span> My CV</a></div>
-                <div class="link" id="certificates"><span class="material-symbols-outlined">license</span> Certificates</div>
-                <div class="link" id="contacts"><span class="material-symbols-outlined">contact_mail</span> Contacts</div>
+                <div class="link" id="home">
+                    <a href="#top-link">
+                        <span class="material-symbols-outlined">home</span> Home
+                    </a>
+                </div>
+
+                <div class="link" id="projects">
+                    <a href="#project-link">
+                        <span class="material-symbols-outlined">terminal</span> Projects
+                    </a>
+                </div>
+
+                <div class="link" id="cv">
+                    <a href="#curriculum-vitae-link">
+                        <span class="material-symbols-outlined">developer_guide</span> My CV
+                    </a>
+                </div>
+
+                <div class="link" id="certificates">
+                    <a href="#certificates-link">
+                        <span class="material-symbols-outlined">license</span> Certificates
+                    </a>
+                </div>
+
+                <div class="link" id="contacts">
+                    <span class="material-symbols-outlined">contact_mail</span> Contacts
+                </div>
             </div>
-            <div class="settings">
-                <div class="setting" id="settings"><span class="material-symbols-outlined">settings</span> Settings</div>
-                <div class="setting" id="support"><span class="material-symbols-outlined">live_help</span> Support</div>
-                <div class="setting" id="privacy"><span class="material-symbols-outlined">verified_user</span> Privacy</div>
-            </div>
+            <!-- End of Slider Logo Group -->
+
         </div>
+        <!-- End of Slider Container -->
+
+        <!-- Start of Header Container -->    
         <div class="header">
-            <div class="search" id="search_">
+
+            <!-- Start of Google Search Input -->    
+            <div class="search" id="top-link">
                 <form action="https://www.google.com/search" method="get">
                     <label for="search"><span class='material-symbols-outlined'>search</span></label>
                     <input type="text" id="search" name="q" placeholder="Google Search">
                 </form>  
             </div>
-            <div class="ico">
+            <!-- End of Google Search Input -->    
+
+            <!-- Start of Photo -->    
+            <div class="mini-photo">
                 <img src="images/image.jpg" alt="Rostyslav Photo">
             </div>
+            <!-- End of Photo -->    
+
+            <!-- Start of Name -->    
             <div class="name"><p>Rostyslav</p><p>Putnikov</p></div>
+            <!-- End of Name -->    
+
         </div>
-        <div class="nav">
-            <div class="icon">
+        <!-- End of Header Container -->    
+
+        <!-- Start of Second Header Container -->    
+        <div class="second-header">
+
+            <!-- Start of Hello Logo -->
+            <div class="logo">
                 <img src="images/image.jpg" alt="Rostyslav Photo">
                 <p>Hi there,<br>I'm Full-Stack Developer<br>And I'm open to Work.</p>
             </div>
+            <!-- End of Hello Logo -->
+
+            <!-- Start of Buttons Area -->
             <div class="buttons">
-                <a href="https://rostyslav-coder.github.io/"><button>My CV Page</button></a>
+                <a href="https://rostyslav-coder.github.io/">
+                    <button>My CV Page</button>
+                </a>
                 <button onclick="location.href='mailto:rostyslavputnikov@gmail.com';">Send Email</button>
                 <a href="CV/CV_Rostyslav_Putnikov_Junior_Python_&_JS_Developer.pdf" download>
                     <button>Download CV</button>
                 </a>
             </div>
+            <!-- End of Buttons Area -->
+
         </div>
-        <div class="main">
-            <h1 id="project">My Projects</h1>
-            <div class="container">
-                <div class="project">
+        <!-- End of Second Header Container -->    
+
+        <!-- Start of Projects Container -->    
+        <div class="projects-container">
+            <h1 id="project-link">My Projects</h1>
+
+            <!-- Start of Projects Sub-container -->
+            <div class="projects-sub-container">
+
+                <!-- Start of First Project Card -->
+                <div class="project-card">
                     <h2>Rock Paper Scissors</h2>
                     <img src="images/rock-paper-scissors.png" alt="form page preview">
                     <div class="links">
@@ -69,7 +131,10 @@
                         </a>
                     </div>
                 </div>
-                <div class="project">
+                <!-- End of First Project Card -->
+
+                <!-- Start of Second Project Card -->
+                <div class="project-card">
                     <h2>Steampunk Calculator</h2>
                     <img src="images/calculator.png" alt="form page preview">
                     <div class="links">
@@ -84,7 +149,10 @@
                         </a>
                     </div>
                 </div>
-                <div class="project">
+                <!-- End of Second Project Card -->
+
+                <!-- Start of Third Project Card -->
+                <div class="project-card">
                     <h2>Sign-Up Page</h2>
                     <img src="images/odin-form.png" alt="form page preview">
                     <div class="links">
@@ -99,7 +167,10 @@
                         </a>
                     </div>
                 </div>
-                <div class="project">
+                <!-- End of Third Project Card -->
+
+                <!-- Start of Forth Project Card -->
+                <div class="project-card">
                     <h2>Etch a Sketch</h2>
                     <img src="images/etch-a-sketch.png" alt="form page preview">
                     <div class="links">
@@ -114,7 +185,10 @@
                         </a>
                     </div>
                 </div>
-                <div class="project">
+                <!-- End of Forth Project Card -->
+
+                <!-- Start of Fives Project Card -->
+                <div class="project-card">
                     <h2>Odin Recipes</h2>
                     <img src="images/odin-recipes.png" alt="form page preview">
                     <div class="links">
@@ -129,10 +203,19 @@
                         </a>
                     </div>
                 </div>
+                <!-- End of Fives Project Card -->
+
             </div>
+            <!-- End of Projects Sub-container -->
+
         </div>
+        <!-- End of Projects Container -->    
+
+        <!-- Start of CV Container -->
         <div class="curriculum-vitae">
-            <h1 id="curriculum-vitae">My Curriculum Vitae</h1>
+            <h1 id="curriculum-vitae-link">My Curriculum Vitae</h1>
+
+            <!-- Start of Summary Table -->
             <div class="summary">
                 <h2>Summary</h2>
                 <table>
@@ -145,9 +228,11 @@
                     </tr>
                 </table>
             </div>
+            <!-- End of Summary Table -->
+
+            <!-- Start of Technical Skills Table -->
             <div class="skills">
                 <h2>Technical Skills</h2>
-                <!-- <hr> -->
                 <table>
                     <tr>
                         <td>Python</td>
@@ -181,9 +266,11 @@
                     </tr>
                 </table>
             </div>
+            <!-- End of Technical Skills Table -->
+
+            <!-- Start of Education Table -->
             <div class="education">
                 <h2>Education</h2>
-                <!-- <hr> -->
                 <table>
                     <tr>
                         <td>The Odin Projects</td>
@@ -223,9 +310,11 @@
                     </tr>
                 </table>
             </div>
+            <!-- End of Education Table -->
+
+            <!-- Start of Working Experience Table -->
             <div class="work-experience">
                 <h2>Work Experience</h2>
-                <!-- <hr> -->
                 <table>
                     <tr>
                         <td>Freelancer</td>
@@ -254,6 +343,9 @@
                     </tr>
                 </table>
             </div>
+            <!-- End of Working Experience Table -->
+
+            <!-- Start of Languages Table -->
             <div class="languages">
                 <h2>Languages</h2>
                 <table>
@@ -271,6 +363,9 @@
                     </tr>
                 </table>
             </div>
+            <!-- End of Languages Table -->
+
+            <!-- Start of Hobby Table -->
             <div class="hobby">
                 <h2>Hobby</h2>
                 <table>
@@ -283,9 +378,60 @@
                     </tr>
                 </table>
             </div>
+            <!-- End of Hobby Table -->
+
         </div>
-        <div class="footer"></div>
+        <!-- End of CV Container -->
+
+        <!-- Start of Certificates Container -->
+        <div class="certificates">
+            <h1 id="certificates-link">My Certificates</h1>
+
+            <!-- Start of Certificate Sub-container -->
+            <div class="certificate-sub-container">
+
+                <!-- Start of First Certificate Card -->
+                <div class="certificate">
+                    <h2>Python Pro at Hillel IT School</h2>
+                    <img src="images/python-pro-crt.png" alt="Hillel certificate 'Python Pro'">
+                    <a href="https://certificate.ithillel.ua/view/96927982">Link
+                    </a>
+                </div>
+                <!-- End of First Certificate Card -->
+
+                <!-- Start of Second Certificate Card -->
+                <div class="certificate">
+                    <h2>Python Basic at Hillel IT School</h2>
+                    <img src="images/python-basic-crt.png" alt="Hillel certificate 'Python Basic'">
+                    <a href="https://certificate.ithillel.ua/view/34010214">Link
+                    </a>
+                </div>
+                <!-- End of Second Certificate Card -->
+
+                <!-- Start of Third Certificate Card -->
+                <div class="certificate">
+                    <h2>QA Manual at Hillel IT School</h2>
+                    <img src="images/manual-qa-crt.png" alt="Hillel certificate 'QA Manual'">
+                    <a href="https://certificate.ithillel.ua/view/30977795">Link
+                    </a>
+                </div>
+                <!-- End of Third Certificate Card -->
+
+            </div>
+            <!-- End of Certificate Sub-container -->
+
+        </div>
+        <!-- End of Certificates Container -->
+
+        <!-- Start of Contacts Container -->
+        <div class="contact">
+            <h2>Contact</h2>
+        </div>
+        <!-- End of Contacts Container -->
+
     </div>
+    <!-- End of Main Page Container -->
+
     <script src="script.js"></script>
 </body>
 </html>
