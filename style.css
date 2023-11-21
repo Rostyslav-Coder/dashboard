@@ -36,7 +36,7 @@
 .main-grid-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, 1fr) repeat(3, auto) 0.5fr;
+  grid-template-rows: repeat(2, 1fr) repeat(4, auto);
 }
 
 
@@ -425,6 +425,35 @@
 .contact {
   background-color: var(--dark-bg);
   grid-area: 6 / 2 / 7 / 6;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+.contact h1 {
+  color: var(--dark-font);
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 
+.contact table {
+  border-spacing: 12px;
+}
+
+.contact td {
+  padding: 8px 28px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--dark-font);
+  text-align: left;
+  border-radius: 5px;
+  border-top: 2px solid var(--main);
+  border-left: 2px solid var(--main);
+  box-shadow: 3px 3px 6px var(--dark-font);
+}
+
+.contact .copy {
+  text-align: center;
+}
