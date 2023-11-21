@@ -32,7 +32,7 @@ dashboardLogo.addEventListener('click', function() {
             '<a href="#certificates-link"><span class="material-symbols-outlined">license</span></a>'
             );
         contacts.innerHTML = (
-            '<span class="material-symbols-outlined">contact_mail</span>'
+            '<a href="#contact-link"><span class="material-symbols-outlined">contact_mail</span></a>'
             );
     } else {
         mainGridContainer.style.gridTemplateColumns = 'repeat(5, 1fr)';
@@ -53,7 +53,32 @@ dashboardLogo.addEventListener('click', function() {
             '<a href="#certificates-link"><span class="material-symbols-outlined">license</span> Certificates</a>'
             );
         contacts.innerHTML = (
-            '<span class="material-symbols-outlined">contact_mail</span> Contacts'
+            '<a href="#contact-link"><span class="material-symbols-outlined">contact_mail</span> Contacts</a>'
             );
     }
 });
+
+// Устанавливаем тему при загрузке страницы
+document.addEventListener('DOMContentLoaded', (event) => {
+    if (localStorage.getItem('theme') === 'light') {
+        document.documentElement.setAttribute('class', 'light');
+        document.getElementById('color-theme').innerHTML = '<img src="svg/moon.svg" alt="light mode logo">';
+    } else {
+        document.documentElement.setAttribute('class', 'dark');
+        document.getElementById('color-theme').innerHTML = '<img src="svg/sun.svg" alt="dark mode logo">';
+    }
+});
+  
+// Переключаем тему при клике
+document.getElementById('color-theme').addEventListener('click', function() {
+    if (document.documentElement.getAttribute('class') === 'light') {
+        document.documentElement.setAttribute('class', 'dark');
+        this.innerHTML = '<img src="svg/sun.svg" alt="dark mode logo">';
+        localStorage.setItem('theme', 'dark');
+    } else {
+        document.documentElement.setAttribute('class', 'light');
+        this.innerHTML = '<img src="svg/moon.svg" alt="light mode logo">';
+        localStorage.setItem('theme', 'light');
+    }
+});
+  
