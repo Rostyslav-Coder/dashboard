@@ -72,6 +72,7 @@
 .slider > div > div:hover {
   cursor: pointer;
   color: var(--target);
+  transition: 0.7s;
 }
 
 .slider div > a {
@@ -82,6 +83,7 @@
 
 .slider div > a:hover {
   color: var(--target);
+  transition: 0.7s;
 }
 
 .material-symbols-outlined {
