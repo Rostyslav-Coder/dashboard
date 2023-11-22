@@ -5,7 +5,7 @@ let mainGridContainer = document.querySelector('#main-grid-container');
 let dashboardLogo = document.querySelector('#dashboard');
 let home = document.querySelector('#home');
 let projects = document.querySelector('#projects');
-let cV = document.querySelector('#cv');
+let cv = document.querySelector('#cv');
 let certificates = document.querySelector('#certificates');
 let contacts = document.querySelector('#contacts');
 
@@ -25,7 +25,7 @@ dashboardLogo.addEventListener('click', function() {
         projects.innerHTML = (
             '<a href="#project-link"><span class="material-symbols-outlined">terminal</span></a>'
             );
-        cV.innerHTML = (
+        cv.innerHTML = (
             '<a href="#curriculum-vitae-link"><span class="material-symbols-outlined">developer_guide</span></a>'
             );
         certificates.innerHTML = (
@@ -46,7 +46,7 @@ dashboardLogo.addEventListener('click', function() {
         projects.innerHTML = (
             '<a href="#project-link"><span class="material-symbols-outlined">terminal</span> Projects</a>'
             );
-        cV.innerHTML = (
+        cv.innerHTML = (
             '<a href="#curriculum-vitae-link"><span class="material-symbols-outlined">developer_guide</span> My CV</a>'
             );
         certificates.innerHTML = (
