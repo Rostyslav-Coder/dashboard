@@ -55,6 +55,7 @@
 }
 
 .slider > .dashboard-top {
+  font-family: 'Exo 2', sans-serif;
   position: fixed;
 }
 
@@ -74,6 +75,7 @@
 }
 
 .slider div > a {
+  font-family: 'Exo 2', sans-serif;
   text-decoration: none;
   color: var(--dark-bg);
 }
@@ -155,6 +157,7 @@
 }
 
 .header > .name {
+  font-family: 'Exo 2', sans-serif;
   font-size: 1.8rem;
   font-weight: 600;
   color: var(--light-font);
@@ -191,6 +194,7 @@
 
 .second-header > .logo > p {
   font-size: 1.8rem;
+  font-family: 'Exo 2', sans-serif;
   font-weight: 600;
   color: var(--dark-font);
   letter-spacing: 1px;
@@ -212,6 +216,7 @@
   border-radius: 8rem;
   background-color: var(--main);
   color: var(--dark-bg);
+  font-family: 'Exo 2', sans-serif;
   font-size: 1.8rem;
   font-weight: 800;
   cursor: pointer;
@@ -235,6 +240,7 @@
 }
 
 .projects-container > h1 {
+  font-family: 'Exo 2', sans-serif;
   color: var(--light-font);
   font-size: 3.5rem;
   font-weight: 700;
@@ -263,6 +269,7 @@
 }
 
 .projects-container > .projects-sub-container > .project-card > h2 {
+  font-family: 'Exo 2', sans-serif;
   font-size: 2rem;
   font-weight: 700;
   color: var(--light-font);
@@ -307,6 +314,7 @@
 }
 
 .curriculum-vitae > h1 {
+  font-family: 'Exo 2', sans-serif;
   color: var(--dark-font);
   font-size: 3.5rem;
   font-weight: 700;
@@ -314,6 +322,7 @@
 }
 
 .curriculum-vitae h2 {
+  font-family: 'Exo 2', sans-serif;
   color: var(--dark-font);
   font-size: 3rem;
   font-weight: 600;
@@ -337,15 +346,21 @@
 .curriculum-vitae > .hobby td {
   padding: 8px 28px;
   font-size: 1.8rem;
-  font-weight: 600;
-  color: var(--dark-font);
+  font-weight: 500;
+  background-color: var(--light-bg);
+  color: var(--light-font);
   text-align: left;
   border-radius: 5px;
   border-top: 2px solid var(--main);
   border-left: 2px solid var(--main);
   box-shadow: 3px 3px 6px var(--dark-font);
 }
- 
+
+.curriculum-vitae img {
+  margin-right: 1rem;
+  height: 2.2rem;
+  vertical-align: -3px;
+}
 
 /* Certificates Container Style */
 .certificates {
@@ -358,6 +373,7 @@
 }
 
 .certificates h1 {
+  font-family: 'Exo 2', sans-serif;
   color: var(--light-font);
   font-size: 3.5rem;
   font-weight: 700;
@@ -386,6 +402,7 @@
 }
 
 .certificates > .certificate-sub-container > .certificate > h2 {
+  font-family: 'Exo 2', sans-serif;
   font-size: 2rem;
   color: var(--light-font);
   font-weight: 600;
@@ -432,6 +449,7 @@
 }
 
 .contact h1 {
+  font-family: 'Exo 2', sans-serif;
   color: var(--dark-font);
   font-size: 3.5rem;
   font-weight: 700;
@@ -446,7 +464,8 @@
   padding: 8px 28px;
   font-size: 1.8rem;
   font-weight: 600;
-  color: var(--dark-font);
+  background-color: var(--light-bg);
+  color: var(--light-font);
   text-align: left;
   border-radius: 5px;
   border-top: 2px solid var(--main);
@@ -456,4 +475,11 @@
 
 .contact .copy {
   text-align: center;
+  margin-top: 35px;
+}
+
+.contact img {
+  margin-right: 1rem;
+  height: 2.2rem;
+  vertical-align: -3px;
 }
