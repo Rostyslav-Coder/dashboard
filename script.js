@@ -100,15 +100,20 @@ dashboardLogo.addEventListener('click', () => {
 document.addEventListener('DOMContentLoaded', () => {
   if (localStorage.getItem('theme') === 'light') {
     document.documentElement.setAttribute('class', 'light');
-    document.getElementById('color-theme').innerHTML = '<img src="svg/moon.svg" alt="light mode logo">';
+    document.getElementById('color-theme').innerHTML = (
+      '<img src="svg/moon.svg" alt="light mode logo">'
+    );
   } else {
     document.documentElement.setAttribute('class', 'dark');
-    document.getElementById('color-theme').innerHTML = '<img src="svg/sun.svg" alt="dark mode logo">';
+    document.getElementById('color-theme').innerHTML = (
+      '<img src="svg/sun.svg" alt="dark mode logo">'
+    );
   }
 });
 
 // Switch the Themas on click
-document.getElementById('color-theme').addEventListener('click', () => {
+// eslint-disable-next-line func-names
+document.getElementById('color-theme').addEventListener('click', function () {
   if (document.documentElement.getAttribute('class') === 'light') {
     document.documentElement.setAttribute('class', 'dark');
     this.innerHTML = '<img src="svg/sun.svg" alt="dark mode logo">';
